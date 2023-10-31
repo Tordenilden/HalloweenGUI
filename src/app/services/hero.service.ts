@@ -37,6 +37,7 @@ export class HeroService {
   delete(id:number):void{
     //return this.herolist[0];
     //this.http.delete
+    // test
   }
   // get2(){
   //   let temp = this.http.get<string>(this.apiUrl+"url here");
