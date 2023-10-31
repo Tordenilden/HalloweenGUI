@@ -1,0 +1,28 @@
+<p>coffe break</p>
+<table>
+  <thead>
+    <td>Id</td>
+    <td>Name</td>
+    <td>Delete</td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hero of herolist">
+      <td>{{hero.id}} </td>
+      <td>{{hero.name}}</td>
+      <td><button (click)="delete(hero.id)">X</button></td>
+    </tr>
+
+
+
+
+    <!-- <tr><td>4 </td><td>Ulla</td></tr>
+    <tr><td>4 </td><td>Ulla</td></tr>
+    <tr><td>4 </td><td>Ulla</td></tr>
+    <tr><td>4 </td><td>Ulla</td></tr> -->
+  </tbody>
+</table>
+<button (click)="getAll()">GetAll</button>
+<button (click)="getById(6)">Get by Id</button>
+<button (click)="create(herolist[2])">create</button>
+<!-- this is cheat i know -->
+
